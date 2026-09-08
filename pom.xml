@@ -8,19 +8,23 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.palle</groupId>
-    <artifactId>palle-hello-world</artifactId>
+    <artifactId>jenkins-project</artifactId>
     <version>1.0</version>
 
     <packaging>war</packaging>
 
     <build>
-        <finalName>palle-hello-world</finalName>
+        <finalName>jenkins-project</finalName>
 
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>3.4.0</version>
+                <version>3.5.1</version>
+
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
             </plugin>
         </plugins>
     </build>
